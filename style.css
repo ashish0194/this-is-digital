@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'cooper';
-    src: url(./CooperLtBTWXXLight.ttf);
+    src: url(./CooperLtBTWXXLight.woff2);
 }
 @font-face {
     font-family: 'gilroy';
-    src: url(./Gilroy-Regular.ttf);
+    src: url(./Gilroy-Regular.woff2);
 }
 *{
     margin: 0;padding: 0;box-sizing: border-box;
