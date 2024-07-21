@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'cooper';
+    src: url(./CooperLtBTWXXLight.ttf);
+}
+@font-face {
+    font-family: 'gilroy';
+    src: url(./Gilroy-Regular.ttf);
+}
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family: 'cooper';
+}
+html,body{
+    width: 100%;height: 100%;
+}
+a{
+    text-decoration: none;
+    color: #000;font-family: 'gilroy';
+}
+nav{
+    width: 100%;top: 0;
+    position: fixed;
+    /* background: lightblue; */
+    display: flex;align-items: center;justify-content: space-between;
+    padding: 2vw 2vw;
+}
+#left h1{
+    font-size: 2.3vw;font-weight: 400;
+}
+#left h1 span img{
+    width: 6px;margin-left: -6px;
+}
+#right{
+    display: flex;align-items: center;
+}
+#right a{
+    display: inline-block;margin-right: 4vw;
+}
+#right h5{
+    font-size: 1.1vw; font-weight: 100;font-family: 'gilroy';
+    z-index: 99;position: relative;
+}
+#right a:nth-last-child(1){
+    position: relative;
+    padding: .7vw 1.5vw;border-radius: 50px;border: 1px solid #000;
+    overflow: hidden;
+}
+#right a:nth-last-child(1) #green{
+    width: 100%;height: 100%;background: springgreen;
+    position: absolute;top: 0;left: -100%;
+    transition: left 0.4s ease;
+}
+#right a:nth-last-child(1):hover #green{
+    left: 0;
+}
+.main {
+    height: 100%;width: 100%;
+    display: flex;align-items: center;
+    justify-content: center;
+    
+}
+.main h1{
+    font-size: 5.3vw;font-weight: 100;
+    width: 60%;text-align: center;
+    position: relative;z-index: 102;
+}
+/*************************/
+/*  Psuedo Class ::after */
+/*************************/
+.main h1::after{
+    content: '';
+    position: absolute;
+    width: 35%;height: 16px;background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    bottom: -5px;left: 50%;background-size: cover;
+    transform: translate(-50%,0);
+}
+/***************************/
+
+    .main #img1{
+    height: 400px;width: 290px;position: absolute;
+    left:3%;top: 20%;
+}
+.main #img2{
+    height: 220px;width: 260px;position: absolute;
+    right: 25%;top: 20%;z-index: 101;
+}
+.main #img3{
+    height: 240px;width: 240px;position: absolute;
+    right: 8%;top: 46%;
+}
+/*  Main ke ander sabhi teeno image ko 
+    eksaath call function            */
+
+    .main img{
+        transition:  margin 0.5s ease;
+        
+    }
+    .main img:hover{
+        margin-top: -20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
